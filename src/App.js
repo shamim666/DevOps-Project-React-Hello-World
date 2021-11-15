@@ -28,7 +28,17 @@ function App() {
       headers: {'content-type' : 'application/json'},
       body: JSON.stringify(carInfo)  
     })
-    .then()
+    .then(res => res.json())
+    .then(data => { 
+    //console.log(data)
+    const addedCar = data 
+    const newCars = [...cars , addedCar ]
+    setCars(newCars);
+    })   
+
+    nameRef.current.value = '' 
+    priceRef.current.value = ''
+
     event.preventDefault()
   }
 
@@ -45,7 +55,7 @@ function App() {
           <input type = "submit" value="submit"/>
         </form>
         <ul>
-          {cars.map(car => <li key={car.id}> name={car.name} price={car.price}</li>)}
+          {cars.map(car => <li key={car.id}> {car.id} : name={car.name} price={car.price}</li>)}
         </ul>
     </div>
   );
