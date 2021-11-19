@@ -8,7 +8,7 @@ function App() {
   const nameRef = useRef();
   const priceRef = useRef(); 
 
-  // get data from node server by using get method
+  // get data from backend(node) server by using get method
   useEffect( ()=>{
     fetch(`http://localhost:5000/cars`)
     .then(res =>res.json())
@@ -21,7 +21,7 @@ function App() {
     const price = priceRef.current.value
     const carInfo = { name: name , price : price }
 
-    // send data to backend server
+    // send data to backend(node) server by using post method
 
     fetch(`http://localhost:5000/cars` , {
       method : 'post',
