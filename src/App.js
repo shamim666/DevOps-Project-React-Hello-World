@@ -10,9 +10,9 @@ function App() {
 <div className="App">
 
 
-	  <h2> Hello World </h2>
+	  <h2> Hello World !</h2>
 	  <br/>
-	  <h4> Welcome to Cars World</h4>
+	  <h4> Welcome to React  World</h4>
 </div>
   );
 }
