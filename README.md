@@ -3,9 +3,9 @@
 ### Step 1
 To create react application via the command line, you should have Node installed on your computer. 
 
-. npx create-react-app my-app
-. cd my-app
-. npm start
+#### npx create-react-app my-app
+#### cd my-app
+#### npm start
 
 That's it. Open http://localhost:3000/ to see your app.
 
