@@ -26,4 +26,4 @@ takes that build folder, pulls Nginx image from Dockerhub, and copies our build 
 docker run -it --rm -p 3000:80 react-app:latest
 
 in this, the port 80 from container listens in 3000 in our machine, which means we can view our application on http://localhost:3000
-With this, now you can able to containerize your applic
+With this, now you can able to containerize your application.
