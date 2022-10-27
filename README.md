@@ -18,7 +18,7 @@ Without further ado, let's write into our Dockerfile
 ### Step 3
 Now, let's build our Dockerfile,
 
-docker build -f Dockerfile -t my_react_app:prod .
+docker build -f Dockerfile -t react-app:latest .
 
 ### step 4
 takes that build folder, pulls Nginx image from Dockerhub, and copies our build to the /html folder we specified. Now Nginx serves our React application inside port 80 inside the container. After all the steps/layers in Dockerfile are completed successfully, we can spin up the image using the following command,
