@@ -23,7 +23,7 @@ docker build -f Dockerfile -t react-app:latest .
 ### step 4
 takes that build folder, pulls Nginx image from Dockerhub, and copies our build to the /html folder we specified. Now Nginx serves our React application inside port 80 inside the container. After all the steps/layers in Dockerfile are completed successfully, we can spin up the image using the following command,
 
-docker run -it --rm -p 3000:80 my_react_app:prod
+docker run -it --rm -p 3000:80 react-app:latest
 
 in this, the port 80 from container listens in 3000 in our machine, which means we can view our application on http://localhost:3000
 With this, now you can able to containerize your applic
